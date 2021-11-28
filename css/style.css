@@ -1,3 +1,9 @@
+:root{
+    --brand-c: #97455f;
+    --hov-c: #6a3144;
+    --hov1-c: #d2d2d2;
+    --para-c: #999999;
+}
 *{
     padding: 0;
     margin: 0;
