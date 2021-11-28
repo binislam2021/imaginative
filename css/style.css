@@ -13,9 +13,26 @@ img{
 }
 .container{
     width: 960px;
+    margin: 0 auto;
 }
 /* ===================
     Common CSS Ends
+=================== */
+
+
+/* ===================
+    Header CSS Starts
+=================== */
+#header{
+    height: 50px;
+    background: #c9a6a6;
+}
+#header .header-top{
+    height: 50px;
+    background: #3292d3;
+}
+/* ===================
+    Header CSS Ends
 =================== */
 
 
