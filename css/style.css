@@ -1,12 +1,26 @@
 :root{
+    --none-c: #ffffff; 
     --brand-c: #97455f;
     --hov-c: #6a3144;
-    --hov1-c: #d2d2d2;
+    --bg-c: #ebebeb;
     --para-c: #999999;
+    --black-3: #333333;
+    --quote-c: #383838;
 }
 *{
     padding: 0;
     margin: 0;
+}
+@font-face {
+    font-family: 'geo-reg';
+    src: url(../fonts/Georgia-Regular-font.ttf);
+}
+@font-face {
+    font-family: 'geo-bold';
+    src: url(../fonts/georgia-bold.ttf);
+}
+body{
+    font-family: 'geo-reg';
 }
 a{
     text-decoration: none;
@@ -27,15 +41,167 @@ img{
 
 
 /* ===================
+    Font CSS Starts
+=================== */
+
+/* Font Size */
+.fs-12{
+    font-size: 12px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-26{
+    font-size: 26px;
+}
+.fs-36{
+    font-size: 36px;
+}
+/* ===================
+    Font CSS Ends
+=================== */
+
+/* =========================
+    Typography CSS Starts
+========================= */
+.text-up{
+    text-transform: uppercase;
+}
+.text1-up::first-letter{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
+/* =========================
+    Typography CSS Ends
+========================= */
+
+
+/* =========================
+    Color Picker Starts
+========================= */
+.bg-c{
+    background: var(--bg-c);
+}
+.hov-c{
+    background: var(--hov-c);
+}
+.brand{
+    color: var(--brand-c);
+}
+.white{
+    color: var(--none-c);
+}
+.dark{
+    color: var(--black-3);
+}
+.detail{
+    color: var(--para-c);
+}
+.quote{
+    color: var(--quote-c)
+}
+.icon-bg{
+    background: var(--icon-bg);
+}
+.icon-hov{
+    background: var(--icon-hov);
+}
+/* =========================
+    Color Picker Ends
+========================= */
+
+
+/* ===================
     Header CSS Starts
 =================== */
 #header{
     height: 50px;
-    background: #c9a6a6;
+    border-bottom: 1px solid #97455f;
 }
+/* Header Top / Social Link */
 #header .header-top{
     height: 50px;
-    background: #3292d3;
+}
+#header .header-top{
+    display: flex;
+    justify-content: space-between;
+}
+#header .header-top .social-link{
+    height: 50px;
+    width: 200px;
+}
+#header .header-top ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+#header .header-top .social-link ul li:last-child{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+#header .header-top .social-link ul li a{
+    color: var(--none-c);
+    background: #d2d2d2;
+    padding: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    font-size: 16px;
+}
+#header .header-top .social-link ul li .pad-x12{
+    padding: 9px 12px;
+}
+#header .header-top .social-link ul li .pad-x11{
+    padding: 9px 11px;
+}
+#header .header-top .social-link ul li a:hover{
+    background: #ee802f;
+}
+
+/* Header Top / Access Item */
+#header .header-top .access-item{
+    height: 50px;
+    width: 255px;
+}
+#header .header-top .access-item ul li{
+    border-right: 1px solid #97455f;
+    padding-right: 9px;
+    line-height: 8px;
+}
+#header .header-top .access-item ul li:last-child{
+    border-right: 0;
+    padding: 0;
+}
+#header .header-top .access-item ul li a{
+    color: #97455f;
+    font-size: 12px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s; 
+}
+#header .header-top .access-item ul li a:hover{
+    color: #ee802f;
 }
 /* ===================
     Header CSS Ends
