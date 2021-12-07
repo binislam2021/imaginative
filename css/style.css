@@ -96,6 +96,9 @@ img{
 .brand{
     color: var(--brand-c);
 }
+.brand-bg{
+    background: var(--brand-c);
+}
 .white{
     color: var(--none-c);
 }
@@ -124,7 +127,6 @@ img{
 =================== */
 #header{
     height: 50px;
-    border-bottom: 1px solid #97455f;
 }
 /* Header Top / Social Link */
 #header .header-top{
@@ -205,6 +207,9 @@ img{
 }
 
 /* Header Middle */
+.header-middle-bg{
+    border-top: 1px solid #97455f;
+}
 #header .header-mdl{
     height: 140px;
     display: flex;
@@ -213,20 +218,17 @@ img{
 #header .logo-part{
     height: 100%;
     width: 300px;
-    /* background: rgb(136, 116, 116); */
     display: flex;
     justify-content: end;
 }
 #header .logo{
     width: 180px;
     height: 100%;
-    /* background: #000; */
     line-height: 140px;
 }
 #header .sub-title{
     width: 120px;
     height: 100%;
-    /* background: rgb(134, 37, 37); */
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -240,7 +242,6 @@ img{
 #header .search-part{
     height: 100%;
     width: 300px;
-    background: rgb(125, 206, 115);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -254,16 +255,13 @@ img{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-#header .box::after{
+#header .line{
     width: 10px;
-    height: 5px;
+    height: 1px;
     background: #ffffff;
     position: absolute;
-    top: 0;
-    left: 0;
-}
-#header form{
-   /* outline: none; */
+    top: 11px;
+    left: 11px;
 }
 #header input{
     line-height: 33px;
