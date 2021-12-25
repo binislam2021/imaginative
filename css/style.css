@@ -344,7 +344,7 @@ img{
 #banner{
     height: 475px;
     width: 100%;
-    background: #af1717;
+    /* background: #af1717; */
     display: flex;
 }
 #banner .banner-image{
@@ -353,6 +353,8 @@ img{
     background: url(../images/banner1.jpg);
     margin: 30px auto 20px auto;
     position: relative;
+    display: block;
+    /* background: #000; */
 }
 #banner .text-part{
     width: 455px;
@@ -367,6 +369,9 @@ img{
     margin-top: 6px;
     line-height: 22px;
 }
+/* #banner .slider-circle{
+    background: #000;
+} */
 /* ===================
     Banner CSS Ends
 =================== */
