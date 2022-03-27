@@ -1,2 +1,2 @@
 # imaginative
-https://binislam2021.github.io/imaginative/
+https://binislam2021.github.io/imaginativ
